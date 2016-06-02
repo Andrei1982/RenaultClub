@@ -44,13 +44,7 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-/*
-.clearfix::after {
-    display: table;
-    content: "";
-    clear: both;
-}
-*/
+
 #logotype {
     display: flex;
     justify-content: center;
@@ -63,7 +57,7 @@ header {
     width: 40%;
     min-width: 350px;
     height: 63px;
-    border-right: 5px solid #a3a3a3;
+    /*border-right: 5px solid #a3a3a3;*/
     /*vertical-align: top;*/
     background-color: //*#fff200*//*black*/;
 	font: 20px Impact ultra-expanded;
@@ -177,18 +171,20 @@ article {
 footer {
     display: inline-flex;
     flex-wrap: wrap;
-    clear: both;
-    box-sizing: border-box;
-	width: 90%;
-    min-height: 50px;
-    border-radius: 10px;
-    color: #373636;
-    opacity: 0.8;
-	text-align: center;
+    justify-content: center;
+    align-items: center;
+    
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    border: 1px solid /*#99cc00*/#505050;
+    
+    box-sizing: border-box;
+	width: 90%;
+    min-height: 50px;
+    border: 1px solid #505050;
+    border-radius: 10px;
+    color: #373636;
+    opacity: 0.8;
 }
 
 footer:hover {
@@ -197,19 +193,19 @@ footer:hover {
 }
 
 #soc {
-    /*display: flex;*/
-    float: left;
+    display: inline-flex;
+    justify-content: center;
+    /*align-items: center;*/
+    
     box-sizing: border-box;
+    border: 1px solid red;
 	width: 60%;
     min-width: 400px;
-    height: 50px;
-    line-height: 44px;
     opacity: 0.8;
-    /*background-color: #F5D312;*/
 }
 
 .icon {
-    display: inline-block;
+    /*display: inline-block;*/
     width: 32px;
     height: 32px;
     margin-left: 10px;
@@ -279,8 +275,10 @@ footer:hover {
 #fRight {
     display: inline-flex;
     flex-wrap: wrap;
-    /*min-width: 200px;*/
-    line-height: 50px;
+    justify-content: center;
+    
+    box-sizing: border-box;
+    border: 1px solid red;
 }
 
 #fRight a {
