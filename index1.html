@@ -16,7 +16,21 @@
 				<h1>RENAULT CLUB</h1>
 			</div>
             <div id="reg">
-				<p>REGISTRATION</p>
+				<form id="entry" action="./ucp.php?mode=login" method="post">
+                    <p class="fieldL">
+                        <label for="login">img</label>
+                        <input type="text" name="login" placeholder="Введите логин" required>
+                    </p>
+                    <p class="fieldP">
+                        <label for="password">img</label>
+                        <input type="password" name='password' placeholder="Введите пароль" required>
+                    </p>
+                    <p class="submit">
+                        <button type="submit" name="submit">
+                            <!--<i class="icon-wheel"></i>-->
+                        </button>
+                    </p>
+                </form>
 			</div>
             <div id="color1"></div>
             <div id="color2"></div>
@@ -33,12 +47,18 @@
 			
 		<section>
 			<article>
-                <h1>Main content...</h1>
+                <h2>Main content...</h2>
                 <p>Но только не хрень про косвенные убытки и НЕофициоз клуба на главной странице...</p>
                 <p>Все это как-то не воспринимается, точнее, воспринимается негативно, что не хорошо для сайта...</p>
                 <p>Хотя, если есть цель отбить у пользователя, который сюда попал, желание присоединится к клубу, можно эту хрень и оставить...)))</p>
                 <p>В футере, как видишь, распространенные соцсети. Если каких-то групп у сайта нет - придется завести, что недолго и на пользу сайту (особенно ютуб - давно пора уже группу создать, куда можно закидывать видосы)!</p>
             </article>
+            <sidebar>
+                <h2>Встреча Рено-клуба</h2>
+                <p>Следующая встреча Рено-клбуба состоится 26 июня 2016 года после Рождества Христова...</p>
+                <h2>Поздравляем с праздником!</h2>
+                <p>Поздравляем с Днем Рождения товарища Принца! Желаем ему всего-всего и побольше!</p>
+            </sidebar>
 		</section>
 
         <footer>
