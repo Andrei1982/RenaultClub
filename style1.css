@@ -1,5 +1,5 @@
 /* ##############################################################
-###  MAIN PAGE - rows 1 - 275  ##################################
+###  MAIN PAGE - rows 1 - 258  ##################################
 ###
 ###  DEV ANDREI NALIVAIKO banderasx@mail.ru +375 29 60-666-02 ###
 ###############################################################*/
@@ -26,7 +26,7 @@ body {
 header {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    /*justify-content: space-between;*/
     align-items: center;
     align-content: space-between;
     
@@ -44,43 +44,86 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*flex: 0 0 40%;*/
-    
-    
-    
+        
     box-sizing: border-box;
     width: 40%;
     min-width: 350px;
-    height: 63px;
+    height: 60px;
     border: 1px solid #a3a3a3;
     border-radius: 10px;
-    background-color: //*#fff200*//*black*/;
-	font: 20px Impact ultra-expanded;
-    color: #99cc00/*#fff200*/;
-    /*padding: 0 10px;*/
-    
-    text-align: center;
+    font: 20px Impact ultra-expanded;
+    color: #99cc00;
 }
 
 #reg {
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    
+        
+    box-sizing: border-box;
+    width: 60%;
+    min-width: 350px;
+    height: 60px;
+	color: #99cc00;
+    /*border: 1px solid #a3a3a3;*/
+    border-radius: 10px;
+    color: #99cc00;
+}
+
+#reg p {
+    font: 12px Impact ultra-expanded;
+    /*border: 1px solid #505050;*/
+    /*border-radius: 5px;*/
+    color: #505050;
+    margin: 5px;
+}
+/*
+#entry {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     
     box-sizing: border-box;
-    width: 40%;
-    min-width: 360px;
-    height: 39px;
-	
-    /*margin-top: 10px;
-    margin-right: 10px;*/
-    
-    color: black;
-    
-	border: 1px solid #99cc00;
-    border-top-right-radius: 5px;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #a3a3a3;
 }
+
+.fieldL {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    
+    box-sizing: border-box;
+    height: 30px;
+    border: 1px solid red;
+}
+
+.fieldP {
+    display: flex;
+    order: 3
+    align-self: flex-end;
+    align-items: center;
+    
+    box-sizing: border-box;
+    height:30px;
+    border: 1px solid red;
+}
+
+.submit {
+    display: flex;
+    order: 2;
+    align-self: center;
+    
+    box-sizing: border-box;
+    width: 35px;
+    height: 40px;
+    font: 20px Impact ultra-expanded;
+    border: 1px solid red;
+}
+*/
 /*
 #color1 {
     display: flex;
@@ -125,7 +168,12 @@ nav li {
     font-size: 18px;
 }
 
-li:hover { 
+nav li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+li a:hover { 
 	transition-duration: 0.5s;
     transition-timing-function: ease-in;
     color: #99cc00;
@@ -145,12 +193,32 @@ section {
 }
 
 article {
+    flex-grow: 5;
+    
     box-sizing: border-box;
-	width: 40%;
-    min-width: 200px;
+	width: 80%;
+    min-width: 400px;
     border-radius: 10px;
     background-color: #99cc00;
     color: #505050;
+    text-align: justify;
+    padding: 20px;    
+    opacity: 0.9;
+}
+
+sidebar {
+    /*display: flex;
+    justify-content: flex-end;
+    align-items: center;*/
+    
+    margin-left: 10px;
+    box-sizing: border-box;
+	width: 20%;
+    min-width: 100px;
+    border: 1px solid #505050;
+    border-radius: 10px;
+    background-color: #505050/*#fff200*/;
+    color: #FFFFFF;
     text-align: justify;
     padding: 20px;    
     opacity: 0.9;
