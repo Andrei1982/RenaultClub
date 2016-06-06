@@ -1,0 +1,299 @@
+/* ##############################################################
+###  MAIN PAGE - rows 1 - 300  ##################################
+###
+###  DEV ANDREI NALIVAIKO banderasx@mail.ru +375 29 60-666-02 ###
+###############################################################*/
+
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+	padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 100%;
+    min-width: 400px;
+    background: url("images/background.png") repeat;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: stretch;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+    box-sizing: border-box;
+	width: 90%;
+    min-height: 100px;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    box-sizing: border-box;
+    width: 40%;
+    min-width: 400px;
+    height: 70px;
+    font: 20px Impact ultra-expanded;
+    color: #1AFF01;
+    /*border: 1px solid #a3a3a3;*/
+}
+
+#search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+    box-sizing: border-box;
+    width: 46%;
+    min-width: 200px;
+    height: 75px;
+    padding-top: 1px;
+    /*border: 1px solid #a3a3a3;*/
+}
+
+input[type="search"] {
+    height: 18px;
+    width: 200px;
+    border: 1px solid #a3a3a3;
+    border-radius: 2px;
+    background-color: transparent;
+    outline-color: transparent;
+}
+
+input[type="search"]:focus,
+input[type="search"]:active {
+    border-color: #1AFF01;
+    color: #a3a3a3;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.7s ease;
+}
+
+input[type="search"]:focus::-webkit-input-placeholder {
+    text-indent: 500px;
+    transition: text-indent 0.7s ease;
+}
+
+input[type="search"]::-webkit-search-cancel-button { 
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: url(images/markbutton.png) no-repeat; 
+    cursor: pointer;
+}
+
+#searchsubmit {
+    height: 18px;
+    width: 18px;
+    border: none;
+    color: #a3a3a3;
+    font: 16px Impact ultra-expanded;
+    margin-left: 5px;
+    background-color: transparent;
+}
+
+#searchsubmit:focus, 
+#searchsubmit:active {
+    outline-color: transparent;
+}
+
+#searchsubmit:hover {
+    color: #1AFF01;
+    cursor: pointer;
+}
+
+#reg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+        
+    box-sizing: border-box;
+    width: 14%;
+    min-width: 160px;
+    height: 75px;
+    /*border: 1px solid #a3a3a3;*/
+}
+
+#reg p a {
+    font: 13px Impact ultra-expanded;
+    text-decoration: none;
+    color: #a3a3a3;
+    border-left: 1px solid #a3a3a3;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+}
+
+#reg p a:hover {
+    transition-duration: 0.3s;
+    color: #1AFF01;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+        
+    box-sizing: border-box;
+	width: 100%;
+    min-width: 400px;
+    min-height: 30px;
+    border-bottom: 1px solid #a3a3a3;
+    border-top: 1px solid #a3a3a3;
+    color: #FFFFFF;
+}
+
+nav li {
+    display: flex;
+    justify-content: space-around;
+        
+    box-sizing: border-box;
+	width: 150px;
+    font-size: 18px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+li a:hover { 
+	transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    color: #1AFF01;
+    background-size: 150px 30px;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex: 1;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    box-sizing: border-box;
+	width: 90%;
+    min-width: 200px;
+}
+
+article {
+    box-sizing: border-box;
+	width: 40%;
+    min-width: 400px;
+    border-radius: 5px;
+    border-left: 1px solid #1AFF01;
+    border-right: 1px solid #1AFF01;
+    color: #FFFFFF;
+    text-align: justify;
+    line-height: 30px;
+    padding: 20px;    
+    box-shadow: inset 0 0 7px rgba(0,0,0,0.5);
+}
+
+footer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    
+    box-sizing: border-box;
+	width: 90%;
+    min-height: 50px;
+    border-bottom: 1px solid #a3a3a3;
+    border-top: 1px solid #a3a3a3;
+    color: #a3a3a3;
+}
+
+footer:hover {
+    border-color: #a3a3a3;
+    opacity: 0.8;
+}
+
+#soc {
+    display: inline-flex;
+    justify-content: center;
+        
+    box-sizing: border-box;
+    width: 60%;
+    min-width: 400px;
+    margin: 5px 0;
+    opacity: 0.6;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: url("images/socsprite.png") no-repeat;
+}
+
+.icon:hover {
+    transition-duration: 0.7s;
+    /*transform: scale(1.2)*/;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #1AFF01;
+}
+
+.fb {
+    background-position: -10px -10px;
+}
+
+.ok {
+	background-position: -10px -52px;
+}
+
+.vk {
+    background-position: -10px -178px;
+}
+
+.tw {
+    background-position: -10px -136px;
+}
+
+.you {
+    background-position: -10px -220px;
+}
+
+.skype {
+    background-position: -10px -94px;
+}
+
+#fRight {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+#fRight a {
+    color: #1AFF01;
+}
