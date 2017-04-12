@@ -1,101 +1,193 @@
 <!DOCTYPE html>
-<html>
-    <head>
-		<link href="style.css" rel="stylesheet">
-        <link href="./fontawesome/css/font-awesome.min.css" rel="stylesheet">
-		<meta charset="utf-8">
-		<meta name="description" content="Клуб владельцев автомобилей Renault - сайт неофициального Renault-клуба">
-		<meta name="keywords" content="Renault, Рено, R19, R25, Laguna, Clio, Logan, Avantime, Espace, Kangoo, Megane, Scenic, Safrane, Twingo, 
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Renault, Рено, R19, R25, Laguna, Clio, Logan, Avantime, Espace, Kangoo, Megane, Scenic, Safrane, Twingo, 
 		Vel Satis, Лагуна, Клио, Логан, Авантайм, Еспейс, Кангу, Меган, Сафран, Шафран, Твинго, Велсатис, клуб, ремонт, обслуживание, эксплуатация, 
 		инструкция, инструкции, Минск, Беларусь, помощь">
-		
-		<!--#####################   slider   #####################-->
-		
-		
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		
-        
-		<!--<script type="text/javascript" src="jquery-1.4.1.min.js"></script>
-		<script type="text/javascript" src="jquery.orbit.min.js"></script>
-		<script type="text/javascript">
-			$(window).load(function() {
-				$('#featured').orbit({
-					'bullets': true,
-					'timer' : true,
-					'animation' : 'horizontal-slide'
-				});
-			});
-		</script>-->
-		<!--#####################   slider   #####################-->
-		
-		<title>Renault club - клуб владельцев Renault</title>
-    </head>
-	
-    <body>
-	 	<header>
-			<div id="logo">
-				<h1>RENAULT CLUB</h1>
-			</div>
-            <form id="search">
-                <input type="search" name="q" placeholder=" Поиск по сайту">
-                <button id="searchsubmit" type="submit" value=""><i class="fa fa-search" aria-hidden="true"></i></button>
-            </form>
-            <div id="reg">
-                <p><a href="#">ВХОД</a></p>
-                <p><a href="#">РЕГИСТРАЦИЯ</a></p>
-            </div>
-            <nav>
-                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> ГЛАВНАЯ</a></li>
-                <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i> ФОРУМ</a></li>
-				<li><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i> ТЕХНОТЫ</a>
-				    <ul class="submenu">
-				        <li><a href="#">RENAULT 5</a></li>
-				        <li><a href="#">RENAULT 11</a></li>
-				        <li><a href="#">RENAULT 19</a></li>
-				        <li><a href="#">RENAULT 20</a></li>
-				        <li><a href="#">RENAULT 21</a></li>
-				        <li><a href="#">RENAULT 25</a></li>
-				        <li><a href="#">SCENIC</a></li>
-				    </ul>
-				</li>
-				<li><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> НОВОСТИ</a>
-				    <ul class="submenu">
-                       <li><a href="#">ГАИ</a></li>
-                       <li><a href="#">СОБЫТИЯ</a></li>
-                       <li><a href="#">АВТОКЛУБЫ</a></li>
-                    </ul>
-				</li>
-				<li><a href="#"><i class="fa fa-car" aria-hidden="true"></i> ВСТРЕЧИ</a></li>
-				<li><a href="#"><i class="fa fa-usd" aria-hidden="true"></i> ПАРТНЕРЫ</a></li>
-				<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> КОНТАКТЫ</a></li>
-			</nav>
-		</header>
-			
-		<section>
-			<article>
-                <h2>Main content...</h2>
-                <p>Но только не фразы про косвенные убытки и НЕофициоз клуба на главной странице...</p>
-                <p>Все это не воспринимается, точнее, воспринимается негативно, что не хорошо для сайта...</p>
-                <p>Хотя, если есть цель отбить у пользователя, который сюда попал, желание присоединится к клубу, эту хрень можно оставить...)))</p>
-                <p>В футере, как видишь, распространенные соцсети. Если каких-то групп у сайта нет - придется завести, что недолго и на пользу сайту (особенно ютуб - давно пора уже группу создать, куда можно закидывать видосы)!</p>
-            </article>
-            <div id="slider">
-                
-		    </div> 
-		</section>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Renault-club</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Comfortaa|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-        <footer>
-            <div id="soc">
-                <a class="icon fb" href="#"></a>
-                <a class="icon ok" href="#"></a>
-                <a class="icon vk" href="#"></a>
-                <a class="icon tw" href="#"></a>
-                <a class="icon you" href="#"></a>
-                <a class="icon skype" href="#"></a>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default menu">
+            <div class="container">
+                <div class="row row1">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">RENAULT CLUB</a>
+                    </div>
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Поиск">
+                        </div>
+                        <button id="searchsubmit" type="submit" value=""><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
             </div>
-            <div id="fRight">
-                <p>© 2002–2016 <a href="mailto:netman(a)autoby.biz">Netman</a></p>
+            <div class="container">
+                <div class="row row2">
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> главная<span class="sr-only">(current)</span></a></li>
+                            <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i> форум</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-wrench" aria-hidden="true"></i> техноты<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Общая информация</a></li>
+                                    <li><a href="#">Рено 5</a></li>
+                                    <li><a href="#">Рено 11</a></li>
+                                    <li><a href="#">Рено 19</a></li>
+                                    <li><a href="#">Рено 20</a></li>
+                                    <li><a href="#">Рено 21</a></li>
+                                    <li><a href="#">Рено 25</a></li>
+                                    <li><a href="#">Avantime</a></li>
+                                    <li><a href="#">Clio / Symbol</a></li>
+                                    <li><a href="#">Duster</a></li>
+                                    <li><a href="#">Espace</a></li>
+                                    <li><a href="#">Kangoo</a></li>
+                                    <li><a href="#">Laguna</a></li>
+                                    <li><a href="#">Laguna II</a></li>
+                                    <li><a href="#">Logan / Sandero</a></li>
+                                    <li><a href="#">Megane / Scenic</a></li>
+                                    <li><a href="#">Megane II</a></li>
+                                    <li><a href="#">Scenic II, III, IV</a></li>
+                                    <li><a href="#">Safrane</a></li>
+                                    <li><a href="#">Twingo</a></li>
+                                    <li><a href="#">Vel Satis</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-file-text-o" aria-hidden="true"></i> новости<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ГАИ</a></li>
+                                    <li><a href="#">События</a></li>
+                                    <li><a href="#">Автоклубы</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class="fa fa-car" aria-hidden="true"></i> встречи</a></li>
+                            <li><a href="#"><i class="fa fa-usd" aria-hidden="true"></i> партнеры</a></li>
+                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> контакты</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
             </div>
-		</footer>
-	</body>
+            <!-- /.container -->
+        </nav>
+
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div id="thumbnail-preview-indicators" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#thumbnail-preview-indicators" data-slide-to="0" class="active">
+                            <div class="thumbnail">
+                                <img class="img-responsive" src="http://s.rdrom.ru/1/pubs/4/21493/688293.jpg">
+                            </div>
+                        </li>
+                        <li data-target="#thumbnail-preview-indicators" data-slide-to="1">
+                            <div class="thumbnail">
+                                <img class="img-responsive" src="http://www.bibipedia.info/media/generations/3972/Renault_Modus_2005_-_2008_1.jpg">
+                            </div>
+                        </li>
+                        <li data-target="#thumbnail-preview-indicators" data-slide-to="2">
+                            <div class="thumbnail">
+                                <img class="img-responsive" src="http://s.rdrom.ru/1/pubs/4/41584/2110812.jpg">
+                            </div>
+                        </li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item slides active">
+                            <div class="slide-1"></div>
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>Обзоры новых моделей</h1>
+                                    <p>Техническая информация, новости с автогонок и релизы ГАИ</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">присоединяйся</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slides">
+                            <div class="slide-2"></div>
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>Общение с единомышленниками</h1>
+                                    <p>Встречи в "реале", советы и помощь одноклубников</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">присоединяйся</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item slides">
+                            <div class="slide-3"></div>
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>Скидки у партенеров клуба</h1>
+                                    <p>Хочешь получать запчасти и услуги дешевле?</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#" role="button">присоединяйся</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#thumbnail-preview-indicators" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#thumbnail-preview-indicators" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row row3">
+                <div class="clearfix"></div>
+                <div class="col-md-8 footer-left text-center center-block">
+                    <a href="#"><i class="fa fa-facebook-square fa-3x social"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square fa-3x social"></i></a>
+                    <a href="#"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+                    <a href="#"><i class="fa fa-envelope-square fa-3x social"></i></a>
+                </div>
+                <div class="col-md-4 footer-right text-center">
+                    <p>© 2002–2016 <a href="mailto:netman(a)autoby.biz">NETMAN</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
